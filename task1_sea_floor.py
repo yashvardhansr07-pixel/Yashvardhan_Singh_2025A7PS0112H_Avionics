@@ -25,7 +25,7 @@ from typing import Tuple
 # DATA PIPELINE CONFIGURATION
 # =============================================================================
 
-def load_and_clean_data(filename: str = "Depth Data (1).csv") -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
+def load_and_clean_data(filename: str = "depth_data.csv") -> Tuple[np.ndarray, np.ndarray, np.ndarray]:
     """
     Ingests and processes raw sonar telemetry data.
 
@@ -75,7 +75,7 @@ def load_and_clean_data(filename: str = "Depth Data (1).csv") -> Tuple[np.ndarra
     return raw_depth.abs().values, cleaned.values, smoothed.values
 
 # Process data and initialize time vectors
-raw_data, cleaned_data, filtered_data = load_and_clean_data("Depth Data (1).csv")
+raw_data, cleaned_data, filtered_data = load_and_clean_data("depth_data.csv")
 total_frames = len(filtered_data)
 time_axis = np.arange(1, total_frames + 1)
 
