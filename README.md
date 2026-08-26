@@ -55,7 +55,7 @@ Design a non-blocking embedded warning system using an Arduino to detect environ
    A 16x2 LCD constantly refreshes to display the current operational state, distance, and time remaining until a wreck. A flashing LED and a piezo buzzer provide visual and acoustic hazard warnings.
 
 **Tinkercad Circuit Screenshot:**
-![Tinkercad Circuit](tinkercad_circuit.png)
+![Tinkercad Circuit](tinkercad_circuit.jpg)
 
 ---
 *Note: Both code files have been thoroughly documented with professional in-line comments to explain the underlying logic.*
