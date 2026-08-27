@@ -41,6 +41,9 @@ Open your terminal/command prompt, navigate to the project directory, and execut
 **Objective:** 
 Design a non-blocking embedded warning system using an Arduino to detect environmental hazards.
 
+**Tinkercad Link**
+https://www.tinkercad.com/things/3lJ4tpsxNPl/editel?returnTo=%2Fdashboard%2Fdesigns%2Fcircuits
+
 **Step-by-Step Approach:**
 1. **Finite State Machine (FSM) Architecture:** 
    I structured the core logic with five distinct states: `OPEN_SEA`, `STORM`, `CHARYBDIS` (obstacle), `ANCHOR_DROPPED`, and `WRECKED`. The entire loop runs using `millis()` instead of `delay()`, ensuring the Arduino never freezes and can always read sensors instantly.
